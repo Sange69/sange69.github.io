@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ranking Shorts</title>
+<meta name="description" content="Ranking Shorts is a private tool that publishes ranking-style YouTube Shorts to its owner's own channel.">
+<style>
+  :root { --bg: #ffffff; --text: #1d1d1f; --muted: #5f6368; --accent: #c00; --card: #f5f5f7; --line: #e3e3e6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --text: #f1f1f1; --muted: #a8a8ad; --accent: #ff4e45; --card: #1e1e20; --line: #2e2e32; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+  h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; }
+  .tag { color: var(--muted); margin: 0 0 32px; font-size: 1.05rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+  ol, ul { padding-left: 1.3rem; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Ranking Shorts</h1>
+  <p class="tag">A private publishing tool for the YouTube channel
+    <a href="https://www.youtube.com/@pyro9039">PYRO (@pyro9039)</a>.</p>
+
+  <div class="card">
+    Ranking Shorts runs on its owner's own computer. It assembles short, ranking-style comedy videos
+    ("Ranking the funniest&nbsp;...") and uploads them to the owner's own YouTube channel through the
+    YouTube Data API. It is not offered to the public and does not access anyone else's account.
+  </div>
+
+  <h2>What it does</h2>
+  <ol>
+    <li>Picks a video topic and gathers short public clips for it.</li>
+    <li>Edits the clips into a vertical Short with a title, a ranking list and on-screen labels, and credits
+      every original creator in the video description.</li>
+    <li>Uploads the finished Short to the owner's channel and schedules its publish time.</li>
+    <li>Reads the view counts of the channel's own uploads, so future topics can follow what viewers enjoy.</li>
+  </ol>
+
+  <h2>Google and YouTube access</h2>
+  <p>The tool signs in with Google OAuth and asks for only two permissions on the owner's account:</p>
+  <ul>
+    <li><strong>Upload videos</strong> (<code>youtube.upload</code>): to publish the Shorts it creates.</li>
+    <li><strong>View YouTube account</strong> (<code>youtube.readonly</code>): to read view counts of its own uploads.</li>
+  </ul>
+  <p>By using this tool you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+    See our <a href="privacy.html">Privacy Policy</a> for how data is handled, and the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, or a clip you want credited differently or removed: <a href="mailto:suiccidx@gmail.com">suiccidx@gmail.com</a></p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="https://www.youtube.com/@pyro9039">YouTube channel</a>
+  </footer>
+</main>
+</body>
+</html>
